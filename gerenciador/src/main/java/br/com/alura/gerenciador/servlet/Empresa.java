@@ -1,8 +1,11 @@
 package br.com.alura.gerenciador.servlet;
 
+import java.util.Date;
+
 public class Empresa {
 	private Integer id;
 	private String nome;
+	private Date data = new Date();
 	
 	public Integer getId() {
 		return id;
@@ -15,6 +18,12 @@ public class Empresa {
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	public Date getData() {
+		return data;
+	}
+	public void setData(Date data) {
+		this.data = data;
 	}
 	
 	
